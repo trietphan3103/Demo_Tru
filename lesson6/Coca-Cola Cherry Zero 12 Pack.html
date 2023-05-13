@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+<div class="top-menu">
+    <div>
+        <img src="images/logo.png" class="logoimg" alt="lennin">
+    </div>
+    <div class="page">
+        <a href="#">Sản phẩm</a>
+        <a href="#">Giới thiệu</a>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="login.html">
+            <i class="fa-solid fa-user" id="users"></i>
+        </a>
+        <div class="lines"></div>
+        <i class="fa-solid fa-globe"></i>
+    </div>
+</div>
+<a href="./shop.html"><button class="goback" ><i class="fa-solid fa-house-chimney fa-2xl"></i></button></a>
+<h1>You can really have it all with Coca-Cola® Cherry Zero Sugar. Packed with cherry flavoring, this sugar free soda will blow your taste buds away! Try the refreshing taste of Coca-Cola Cherry Zero Sugar today.</h1>
+<div class="gallery">
+<div class="row">
+  <div class="column">
+    <img src="https://us.coca-cola.com/content/dam/nagbrands/us/coke/en/products/coca-cola-flavors/2022-package-update/Cherry%20Zero%20Sugar%2012%20oz.png" style="width: 100%;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.totalwine.com/dynamic/490x/media/sys_master/twmmedia/h0a/h5d/10987776868382.png" style="width: 100%; height: 50%;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.stockupmarket.com/wp-content/uploads/2020/06/Coca_Cola_Cherry_Zero_Sugar_20_Fl_Oz.png" style="width: 100%;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://cdn.gardengrocer.com/attachments/photos/high_res/977.png?4685" style="width: 100%;" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="containere" style="width: 20%;">
+    <img id="expandedImg" class="bigimg">
+  </div>
+  <div style="display:block;">
+
+    <button onclick="addToCart()" class="containerbutton">Thêm vào giỏ hàng</button>
+  </div>
+</div>
+</div>
+
+<script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      expandImg.src = imgs.src;
+      expandImg.parentElement.style.display = "flex";
+    }
+    </script>
+</body>
+</html>

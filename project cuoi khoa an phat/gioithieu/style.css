@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#highlight{
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.top-menu{
+    background: rgb(6, 224, 206);
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 9em;
+    grid-row-gap: 1em;
+    padding: 14px 64px;
+    margin-bottom: 36px;
+}
+
+.top-menu .page{
+    display: flex;
+    justify-content: space-evenly;   
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.top-menu .page a{
+    color: white;
+}
+
+.top-menu .icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.lines{
+    border-right: 1px solid white;
+    height: 36px;
+}
+
+#infor {
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+   
+    
+    padding: 2.5em 0;
+}
+#infor .card_2 {
+    max-width: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.7s;
+}
+
+#infor .card_2 .container-infor {
+    text-align: left;
+}
+
+
+
+#infor .card_2 .image-container-infor img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 30em;
+    background-color: whitesmoke;
+    width: 100%;
+    justify-content: center;
+    
+}
+#infor .card_2 .container-infor {
+    padding-top: 1em;
+    color: #110f29;
+}
+#infor .card_2 .container-infor h5 {
+    font-weight: 500;
+    font-size: 18px;
+}
+#infor .card_2 .container-infor h6 {
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 5px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+<div class="top-menu">
+    <div>
+        <img src="images/logo.png" class="logoimg" alt="lennin">
+    </div>
+    <div class="page">
+        <a href="#">Sản phẩm</a>
+        <a href="#">Giới thiệu</a>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="login.html">
+            <i class="fa-solid fa-user" id="users"></i>
+        </a>
+        <div class="lines"></div>
+        <i class="fa-solid fa-globe"></i>
+    </div>
+</div>
+<a href="./shop.html"><button class="goback" ><i class="fa-solid fa-house-chimney fa-2xl"></i></button></a>
+<h1>The M-350 mechanical pencil features a premium, metal barrel, and comfort rubber grip – suitable for students, professionals, and everyday users. With a solid construction and sleek appearance, the M-350 is perfect for someone who is looking to embody their personal style within their writing instrument. This high-quality mechanical pencil features designer metal clip as well as an eraser under the cap.</h1>
+<div class="gallery">
+<div class="row">
+  <div class="column">
+    <img src="https://cdn.shopify.com/s/files/1/0506/1135/5854/products/57112_M-350_MP_0.7mm_Space_Black_2Pk_w_Bonus_Lead_Eraser_540x.jpg?v=1643917958" style="width: 100%;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://cdn.shopify.com/s/files/1/0506/1135/5854/products/57111_M-350_MP_0.7mm_Space_Black_1Pk_w_Bonus_Lead_Eraser_540x.jpg?v=1643917958" style="width: 100%;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://cdn.shopify.com/s/files/1/0506/1135/5854/products/57110PROD_M-350_MP_0.7mm_Space_Black_MAIN_540x.jpg?v=1643337907" style="width: 100%;" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="containere" style="width: 20%;">
+    <img id="expandedImg" class="bigimg">
+  </div>
+  <div style="display:block;">  
+    <button onclick="addToCart()" class="containerbutton">Thêm vào giỏ hàng</button>
+  </div>
+</div>
+</div>
+
+<script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      expandImg.src = imgs.src;
+      expandImg.parentElement.style.display = "flex";
+    }
+    </script>
+</body>
+</html>
